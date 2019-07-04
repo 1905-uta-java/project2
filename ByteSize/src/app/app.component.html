@@ -1,0 +1,25 @@
+<div class="site">
+
+  <div class="site-content">
+
+    <nav class="navbar navbar-expand navbar-dark">
+
+      <div class="navbar-nav">
+          <a class="nav-item nav-link active" [routerLink]="[ '/home' ]" routerLinkActive="active">Home</a>
+          <a class="nav-item nav-link" [routerLink]="[ '/profile' ]" routerLinkActive="active">Profile</a>
+          <a class="nav-item nav-link" [routerLink]="[ '/leader-board' ]" routerLinkActive="active">Leader Board</a>
+        </div>
+
+    </nav>
+
+    <div class="header"></div>
+    <main>
+
+      <router-outlet></router-outlet>
+
+    </main>
+  </div>
+
+  <footer></footer>
+
+</div>
