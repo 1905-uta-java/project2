@@ -1,25 +1,42 @@
-<div class="site">
+<div id="app" class="container-fluid">
 
-  <div class="site-content">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-    <nav class="navbar navbar-expand navbar-dark">
 
-      <div class="navbar-nav">
-          <a class="nav-item nav-link active" [routerLink]="[ '/home' ]" routerLinkActive="active">Home</a>
-          <a class="nav-item nav-link" [routerLink]="[ '/profile' ]" routerLinkActive="active">Profile</a>
-          <a class="nav-item nav-link" [routerLink]="[ '/leader-board' ]" routerLinkActive="active">Leader Board</a>
-        </div>
 
-    </nav>
+    <div id="navbarNavDropdown" class="navbar-collapse collapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" [routerLink]="[ '/home' ]" routerLinkActive="active">Home <span
+              class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="[ '/profile' ]" routerLinkActive="active">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="[ '/leader-board' ]" routerLinkActive="active">Leader Board</a>
+        </li>
 
-    <div class="header"></div>
-    <main>
+      </ul>
+      <ul class="navbar-nav">
 
-      <router-outlet></router-outlet>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/login-signup']" routerLinkActive="router-link-active">Login / Register</a>
+        </li>
 
-    </main>
-  </div>
-
-  <footer></footer>
-
+      </ul>
+    </div>
+  </nav>
 </div>
+
+    <div class="header">
+      <div class="container">
+
+      </div>
+    </div>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+
