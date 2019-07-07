@@ -1,3 +1,21 @@
-body {
-  background-color: black;
+.trivia-div {
+  align-self: center;
+  align-content: space-between;
+  color: black;
+
+}
+
+.trivia-card {
+  background: white;
+  color: black;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.trivia-questions {
+  color: black;
+}
+
+.trivia-questions:hover {
+  background: lightblue;
 }
